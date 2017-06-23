@@ -732,7 +732,7 @@ public final class DefaultFileSystemMaster extends AbstractMaster implements Fil
   }
 
   @Override
-  public List<FileInfo> listStatus(AlluxioURI path, ListStatusOptions listStatusOptions)
+  public List<FileInfo>  (AlluxioURI path, ListStatusOptions listStatusOptions)
       throws AccessControlException, FileDoesNotExistException, InvalidPathException {
     Metrics.GET_FILE_INFO_OPS.inc();
     try (JournalContext journalContext = createJournalContext();
